@@ -32,4 +32,10 @@ for(int val : myList){
 }
 cout<<endl;
 
+// earase
+myList.erase(next(myList.begin(),2));
+for(int val:myList){
+    cout<<val<<" ";
+}
+cout<<endl;
 }
