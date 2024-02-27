@@ -51,11 +51,22 @@ for(int val:myList){
 }
 cout<<endl;
 
-//4. Replace 
+//6. Replace 
 replace(myList.begin(),myList.end(),10,1076);
 for(int val : myList){
     cout <<val<<" ";
 
 }
 cout <<endl;
+
+//7.
+auto it=find(myList.begin(),myList.end(),60);
+if(it==myList.end()){
+    cout<<" not found"<<endl;
+}else{
+    cout<<" found";
+}
+cout<<endl;
+
+
 }
