@@ -24,5 +24,16 @@ int main(){
    }
    cout<<endl;
 
+   //4. remove Duplicate  (Note : firstly need sort array)
+   myList.sort();
+   myList.unique();
+   for(int val:myList){
+    cout<<val<<" ";
+   }
+   cout<<endl;
+  
+
+
+
 
 }
