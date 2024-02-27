@@ -4,6 +4,7 @@ int main(){
 
 
 list <int> myList={10,20,30};
+
 list<int> newList;
 newList=myList;
 for(int val: newList){
@@ -32,7 +33,18 @@ for(int val : myList){
 }
 cout<<endl;
 
-// earase
+
+//4 insert from anpther list 
+list<int>newList2={1,2,3,4};
+
+myList.insert(next(myList.begin(),3),newList2.begin(),newList2.end());
+for(int val :myList){
+    cout<<val<<" ";
+
+}
+cout<<endl;
+
+// 5 earase
 myList.erase(next(myList.begin(),2));
 for(int val:myList){
     cout<<val<<" ";
