@@ -50,4 +50,12 @@ for(int val:myList){
     cout<<val<<" ";
 }
 cout<<endl;
+
+//4. Replace 
+replace(myList.begin(),myList.end(),10,1076);
+for(int val : myList){
+    cout <<val<<" ";
+
+}
+cout <<endl;
 }
